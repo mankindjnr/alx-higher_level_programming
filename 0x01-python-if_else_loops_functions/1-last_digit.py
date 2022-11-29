@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 
 numberCopy = number
 
-if numberCopy < 0:
+if number < 0:
     numberCopy = numberCopy * -1
     last = (numberCopy % 10) * -1
 else:
