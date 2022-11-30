@@ -7,7 +7,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	list *temp = head;
+	listint_t *temp = head;
 
 	while(temp != NULL)
 	{
