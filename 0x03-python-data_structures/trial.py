@@ -1,29 +1,15 @@
 #!/usr/bin/python3
-tuple_a = (1, 89)
-tuple_b = ()
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+    ]
 
-print("length1 is {:d}".format(len(tuple_a)), end="\n")
-print("length2 is {:d}".format(len(tuple_b)), end="\n")
+length = len(matrix)
 
-length1 = len(tuple_a)
-length2 = len(tuple_b)
-
-if length1 == 1:
-    tuple_a = tuple_a + (0,)
-elif length1 == 0:
-    tuple_a = (0, 0)
-
-if length2 == 1:
-    tuple_b = tuple_b + (0,)
-elif length2 == 0:
-    tuple_b = (0, 0)
-
-print("first: ", tuple_a)
-print("second: ", tuple_b)
-
-sum1 = tuple_a[0] + tuple_b[0]
-sum2 = tuple_a[1] + tuple_b[1]
-
-c =(sum1, sum2)
-
-print(c)
+for i in range(length):
+    for j in range(length):
+        if j == 2:
+            print(matrix[i][j], sep="\n")
+        else:
+            print(matrix[i][j], end=' ')
