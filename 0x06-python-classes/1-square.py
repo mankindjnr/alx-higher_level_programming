@@ -3,6 +3,6 @@
 
 
 class Square:
-    """python3 -c 'print(__import__("1-Square").Square.__square__)'"""
+    """python3 -c 'print(__import__("1-Square").MyClass.__square__)'"""
     def __init__(self, size):
-        self.__size = None
+        self.__size = size
