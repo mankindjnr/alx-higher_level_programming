@@ -25,14 +25,17 @@ class Square:
         self.__size = value
 
     def position(self, Tup):
+        """just checking is its doc"""
         if (len(Tup) != 2 or (not Tup[0].isdigit() or not Tup[1].isdigit())):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = Tup
 
     def area(self):
+        """just checking is its doc"""
         return self.__size * self.__size
 
     def my_print(self):
+        """just checking is its doc"""
         if self.__size == 0:
             print()
             return
