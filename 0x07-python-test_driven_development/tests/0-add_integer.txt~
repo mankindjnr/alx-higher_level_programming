@@ -1,0 +1,9 @@
+import unittest
+import 0-add_integer
+
+class Test_add_integer(unittest.TestCse):
+      def test_add_integer(self):
+      	  self.assertEqual(0-add_integer.add_integer(10, 5), 15)
+	  self.assertEqual(0-add_integer.add_integer(-1, 1), 0)
+	  self.assertEqual(0-add_integer.add_integer(-1, -1), -2)
+	  
