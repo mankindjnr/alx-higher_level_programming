@@ -3,9 +3,9 @@
 
 
 class Rectangle:
+    """clAss defining a rectangle - we count instances created and those del"""
     #public class attribute creation
     number_of_instances = 0
-    """class rectangle to find perimeterand area"""
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
