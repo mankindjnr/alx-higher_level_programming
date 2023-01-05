@@ -3,8 +3,8 @@
 
 int main(void)
 {
-	char *arr;
+	int* arr;
 
-	arr = "1";
-	printf("first: %c\n", arr[0]);
+	arr[] = 1;
+	printf("first: %d\n", arr[0]);
 }

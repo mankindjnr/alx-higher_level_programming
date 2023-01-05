@@ -9,7 +9,7 @@ int is_palindrome(listint_t **head)
 {
 	int arraySize = 0, i, j, count = 0;
 
-	while ((*head) != NULL)
+	while((*head) != NULL)
 	{
 		arraySize++;
 		*head = (*head)->next;
@@ -45,3 +45,22 @@ int is_palindrome(listint_t **head)
 
 	return (1);
 }
+
+
+/**
+ *countNodes - counts the number of nodes in a singly linked list
+ *Return: the count
+ *
+ *int countNodes(listint_t **head)
+ *{
+ *	int count = 0;
+ *
+ *	while((*head) != NULL)
+ *	{
+ *		count++;
+ *		*head = (*head)->next;
+ *	}
+ *
+ *	return (count);
+ *}
+ */
