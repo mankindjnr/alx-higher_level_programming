@@ -7,4 +7,4 @@ that inherits directly from a specific class
 
 def inherits_from(obj, a_class):
     """checking if its an instance of a subclass inheriting a specific cls"""
-    return isinstance(obj, a_class)
+    return issubclass(type(obj), a_class)
