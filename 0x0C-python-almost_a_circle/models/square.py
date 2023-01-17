@@ -21,3 +21,8 @@ class Square(Rectangle):
         self.setter_validation("width", side)
         self.width = side
         self.height = side
+
+    def __str__(self):
+        """Overwritting the str method"""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
