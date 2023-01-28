@@ -5,5 +5,5 @@ def uppercase(str):
         if str[i] >= 'a' and str[i] <= 'z':
             print("{:c}".format(ord(str[i]) - 32), end='')
         else:
-            print(str[i], end='')
+            print("{:s}".format(str[i]), end='')
     print()
