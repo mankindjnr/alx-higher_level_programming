@@ -2,7 +2,7 @@
 const firstArg = process.argv[2];
 let convertFirstArg;
 
-if (!(+firstArg)) {
+if (isNaN(firstArg)) {
   console.log('Not a number');
 } else {
   convertFirstArg = parseInt(firstArg);
