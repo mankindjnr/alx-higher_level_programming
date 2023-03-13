@@ -6,5 +6,5 @@ if (isNaN(firstArg)) {
   console.log('Not a number');
 } else {
   convertFirstArg = parseInt(firstArg);
-  console.log('My number: ', convertFirstArg);
+  console.log('My number: ' + convertFirstArg);
 }
