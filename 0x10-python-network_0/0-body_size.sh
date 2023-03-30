@@ -1,3 +1,3 @@
 #!/bin/bash
 # curl a websites size
-echo "$(curl -s -w '%{size_download}' $1)"
+curl -s -w '%{size_download}\n' "$1"
