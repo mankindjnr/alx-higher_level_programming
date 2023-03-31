@@ -7,7 +7,6 @@ import requests
 import sys
 
 url = sys.argv[1]
-
 response = requests.get(url)
 
 if 'X-Request-Id' in response.headers:
