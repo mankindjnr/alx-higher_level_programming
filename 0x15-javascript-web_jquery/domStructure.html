@@ -1,0 +1,67 @@
+Document
+    <html> </html>
+        <head></head>
+            <title></title>
+                jquery Training
+        
+        <body> </body>
+            <h1></h1>
+                jquery intro
+            <p></p>
+                plan your text
+
+javascript is a scripting language to interact with the DOM(Document Object Model)
+jquery - sits between javascript and the browser (js - jquery - browser)
+    allows developers to build code for all browsers without having to specify for one.
+    it handles the dependencies for the browser
+
+
+jQuery(<code>) - a jquery function
+$(<code>) - a jquery function
+$(document) - jquery function usually takes a single argumnet - i.e document
+a jQuery object is like an array, which contains zero or more indexes.
+
+to use jquery <script src="./jquery-3.6.4.js"></script>
+
+when using jquery and your use
+    $(document) - it understands that you are referring to the whole document from the top
+
+    $(document).ready() is executed as soon as the document is erady for DOM manipulation
+
+    say you have a function readyDemo
+        <div id="readyDemo"></div>
+
+        we will then assign our function to the ready event, to tell jquery that as soon
+        as our document is ready, call this function.
+    
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#readyDemo").text("Hello, world!");
+    });
+    </script>
+    $(document).ready(function() {
+        <!--when the document is ready, do whatever is in this function says-->
+    })
+
+    <!--JQUERY FUNCTION CHAINING-->
+    chaining is where jquery can perform multpile methods at the same set of element.
+
+    <div id="chainingDemo"></div>
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#chainingDemo').text('Edureka ').css('color', 'red').fadeIn('slow');
+        });
+    </script>
+
+In this script, we use the jQuery selector $('header') to select the <header> element. We then use the css() method to set its color property to '#FF0000', which is the hex code for red. This will update the text color of the header to red.
+
+    Note that in order to use jQuery, you will need to include the jQuery library in your HTML file. You can do this by adding the following line to the <head> section of your HTML file:
+    
+    html
+    Copy code
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    This will include the latest version of jQuery from the jQuery CDN.
+        add it in the head tag
