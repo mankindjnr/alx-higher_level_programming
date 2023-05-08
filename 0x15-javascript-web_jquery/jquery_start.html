@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <style>
+            body {
+                background: rgb(151, 119, 119);
+            }
+        </style>
+        <title>Hello</title>
+        <link rel="stylesheet" href="variable.css">
+
+    </head>
+    <body>
+        <h2>Hello, Njoro!</h2>
+
+        <div id="readyDemo">
+        </div>
+
+        <div id="chainingDemo">
+        </div>
+
+        <div id="trial">its a trial on id
+        </div>
+
+        <div class="classTrial">it a class trial
+        </div>
+
+        <a href="google.com" target="_blank">attribute tag</a>
+        <a href="yahoo.com" target="_self">attribute tag</a>
+        
+
+
+        <!--JQUERY FUNCTION AND CHANING THE MULTIPLE METHODS-->
+        <!--#(hash) are used to selct ids, classes are selected using .(dots)-->
+        <!--element selectors - it uses html tags to select required elements. best practice to use tagname before using a class selector-->
+        <!--attribute selectors-->
+        <!--universal selector-->
+        <!--position selector and pseudo class sekectors-->
+        <script src="./jquery-3.6.4.min.js"></script>
+        <script>
+
+            $(document).ready(function()
+            {
+                $('#readyDemo').text("just a jquery single function. it will execute when the page is ready");
+            });
+
+            $(document).ready(function()
+            {
+                $('#chainingDemo').text('chaining Mehthods in jquery ').css('color', 'red').fadeIn('slow');
+            });
+
+            $(document).ready(function()
+            {
+                $('#trial').text().css('color', 'red').fadeIn('slow');
+            });
+            $(document).ready(function()
+            {
+                $('.classTrial').text().css('color', 'red').fadeIn('slow');
+            });
+
+            $(document).ready(function()
+            {
+                $('h2').text("hello, njoro! - element selector");
+
+                $("a[target='_self']").css('color', 'green');
+
+                $("a[href='yahoo.com']").text("yahoo").css('color', 'purple');
+
+                $("*").css("color", "aliceblue")
+
+            });
+
+
+        </script>
+
+        <!--CUSTOM FUNCTIONS
+            BASIC FUNCTION DECLARATION
+                function multiply(x, y) {
+                    return (x * y);
+                }
+                console.log(multipply(2, 2));-->
+        
+        <!--CUSTOM JQUERY FUNCTION
+        (function ($) {
+            $.fn.customFunction = function () {
+                //add the code here
+                //use the object that is using this function with the word 'this'
+                //example: this.attr('id')
+            };
+            })(jQuery);
+
+            $('#Selector').customFunction();
+        })-->
+
+        <!--QUERYING THE DOM - SELECTING one or more elements from your DOM to work with them
+        in jQuery, we query the DOM using the CSS selectors i.e
+    
+        <ul id="fruits">
+            <li>orange</li>
+            <li>apple</li>
+        </ul>
+    
+        THE JQUERY SCRIPT
+        <script>
+            $(document).ready(function() 
+            {
+                $("#fruits").text();
+                $("#ul#fruits").text();
+                $("#ul").text();
+                $("#fruits li").text();
+                console.log($("#fruits"));
+            });
+        </script
+        -->
+    </body>
+</html>
